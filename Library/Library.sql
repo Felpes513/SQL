@@ -1,0 +1,12 @@
+CREATE DATABASE Library;
+
+CREATE TABLE users(
+	user_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	name VARCHAR(50),
+	cpf VARCHAR(11),
+	number VARCHAR(13),
+	address VARCHAR(100),
+	birthday DATE,
+	email VARCHAR(45)
+);
+
